@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <title>Chandra - ER | Profiles</title>
+
+    <style>
+         :root {
+            --color-primary: #ddd;
+            --bg-gradient: linear-gradient(-45deg, #391c13, #3e1021, #221e38, #08362b);
+            --bg-opacity-gradient: linear-gradient(90deg, #fff, #fff7, #fff3, #fff0);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui;
+            font-size: 62.5%;
+            color: var(--color-primary);
+        }
+        
+        body {
+            height: 100vh;
+            width: 100Vw;
+            background: var(--bg-gradient);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        img {
+            height: 10rem;
+            width: 10rem;
+            margin: 2rem 0;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-transform: capitalize;
+        }
+        
+        a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+        
+        #container {
+            height: auto;
+            width: 35rem;
+            padding: 5rem;
+            border: 0.2rem solid var(--color-primary);
+            border-radius: 2rem;
+        }
+        
+        #container #intro {
+            margin-bottom: 3rem;
+        }
+        
+        #container #intro #logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #logo>ion-icon {
+            height: 7rem;
+            width: 7rem;
+        }
+        
+        #links {
+            position: relative;
+        }
+        
+        #links .link-box {
+            width: 100%;
+            height: 5rem;
+            padding: 0.5rem 0;
+            margin: 0.5rem 0;
+            align-items: center;
+            display: flex;
+        }
+        
+        #links .link-box::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 0.2rem;
+            left: 0;
+            border-radius: 0.2rem;
+            margin-top: 5rem;
+            background: var(--bg-opacity-gradient);
+        }
+        
+        ion-icon {
+            height: 4rem;
+            width: 4rem;
+            color: var(--color-primary);
+            margin-right: 3rem;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="intro">
+            <div id="logo">
+                <img src="logo.svg" alt="GC">
+            </div>
+            <div id="about">
+                <h1>Hello!!</h1>
+                <h2>I am Gopi Chandra</h2>
+            </div>
+        </div>
+        <div id="links">
+            <div class="link-box">
+                <ion-icon name="logo-github"></ion-icon>
+                <a href="https://github.com/gopichandra-er" target="_blank">Github</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://www.linkedin.com/in/gopi-chandra-a2b233232/" target="_blank">Linkedin</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="paper-plane"></ion-icon>
+                <a href="https://t.me/gopichandra_er" target="_blank">Telegram</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="logo-snapchat"></ion-icon>
+                <a href="https://www.snapchat.com/add/chandra24_er" target="_blank">Snapchat</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <!-- <a href="https://www.facebook.com/" target="_blank">Facebook</a> -->
+                <a href="" aria-disabled="true">Facebook</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <!-- <a href="https://www.instagram.com/" target="_blank">Instagram</a> -->
+                <a href="" aria-disabled="true">Instagram</a>
+            </div>
+            <div class="link-box">
+                <ion-icon name="logo-game-controller-a"></ion-icon>
+                <a href="https://www.chess.com/member/chandra_er" target="_blank">Chess.com</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
