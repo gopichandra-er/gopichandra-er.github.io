@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="gopichandra-er">
-    <meta name="gopichandra_er">
-    <meta name="I am Gopi Chandra">
-    <meta name="Gopi Chandra Github">
+    <meta name="description" content="Gopi Chandra Profiles">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Github">
+    <meta name="author" content="Gopi Chandra">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
@@ -57,12 +56,14 @@
             margin: 2rem 0;
         }
         
-        h1 {
+        h1::before {
+            content: 'Hello!';
             font-size: 3rem;
             text-transform: capitalize;
         }
         
-        h2 {
+        h2::before {
+            content: 'I am Gopi Chandra';
             font-size: 2.5rem;
             text-transform: capitalize;
         }
@@ -72,6 +73,34 @@
             text-transform: capitalize;
             font-size: 2.5rem;
             cursor: pointer;
+        }
+        
+        #git::before {
+            content: 'Github';
+        }
+        
+        #lin::before {
+            content: 'Linked In';
+        }
+        
+        #tele::before {
+            content: 'Telegram';
+        }
+        
+        #snap::before {
+            content: 'Snapchat';
+        }
+        
+        #fb::before {
+            content: 'Facebook';
+        }
+        
+        #ig::before {
+            content: 'Instagram';
+        }
+        
+        #chess::before {
+            content: 'Chess.com';
         }
         
         #container {
@@ -88,8 +117,15 @@
         
         #container #intro #logo {
             display: flex;
-            align-items: center;
             justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        #container #intro #logo::before {
+            content: '';
+            background: url(logo.svg);
+            height: 10rem;
+            width: 10rem;
         }
         
         #logo>ion-icon {
@@ -142,54 +178,54 @@
     <div id="container">
         <div id="intro">
             <div id="logo">
-                <img src="logo.svg" alt="GC">
+                <!-- <img src="logo.svg" alt="GC"> -->
             </div>
             <div id="about">
-                <h1>Hello!!</h1>
-                <h2>I am Gopi Chandra</h2>
+                <h1></h1>
+                <h2></h2>
             </div>
         </div>
         <div id="links">
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-github"></ion-icon>
-                    <a href="https://github.com/gopichandra-er" target="_blank">Github</a>
+                    <a href="https://github.com/gopichandra-er" target="_blank" id="git"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-linkedin"></ion-icon>
-                    <a href="https://www.linkedin.com/in/gopi-chandra-a2b233232/" target="_blank">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/gopi-chandra-a2b233232/" target="_blank" id="lin"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="paper-plane"></ion-icon>
-                    <a href="https://t.me/gopichandra_er" target="_blank">Telegram</a>
+                    <a href="https://t.me/gopichandra_er" target="_blank" id="tele"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-snapchat"></ion-icon>
-                    <a href="https://www.snapchat.com/add/chandra24_er" target="_blank">Snapchat</a>
+                    <a href="https://www.snapchat.com/add/chandra24_er" target="_blank" id="snap"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-facebook"></ion-icon>
-                    <a href="" aria-disabled="true">Facebook</a>
+                    <a href="" aria-disabled="true" id="fb"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-instagram"></ion-icon>
-                    <a href="" aria-disabled="true">Instagram</a>
+                    <a href="" aria-disabled="true" id="ig"></a>
                 </div>
             </div>
             <div class="link-box">
                 <div class="line">
                     <ion-icon name="logo-game-controller-a"></ion-icon>
-                    <a href="https://www.chess.com/member/chandra_er" target="_blank">Chess.com</a>
+                    <a href="https://www.chess.com/member/chandra_er" target="_blank" id="chess"></a>
                 </div>
             </div>
         </div>
