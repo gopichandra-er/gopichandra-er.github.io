@@ -69,10 +69,19 @@
         left: 2.1875rem;
         right: 2.1875rem;
     }
+    .banner_wrapper .banner-content h2::after {
+        left: 50%;
+    }
 }
 
 @media(max-width: 390px) {
+    .banner_wrapper {
+        padding: 2rem;
+    }
+    .footer_wrapper .newsletter {
+        padding: 5rem;
+    }
     .banner_wrapper .banner-content h2::after {
-        left: 50%;
+        left: 40%;
     }
 }
